@@ -121,7 +121,7 @@ export function Dashboard() {
                 </div>
                 <span className="text-xs font-medium">{p.label}</span>
                 <span className="text-[11px] text-muted">
-                  {p.width}Ã—{p.height}
+                  {p.width}×{p.height}
                 </span>
               </button>
             ))}

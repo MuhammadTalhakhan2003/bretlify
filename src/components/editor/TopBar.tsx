@@ -141,7 +141,7 @@ export function TopBar() {
         >
           <span className="hidden 2xl:inline">{preset?.label ?? "Custom"}</span>
           <span className="tabular-nums text-rind-200/80">
-            {artboard.width}Ã—{artboard.height}
+            {artboard.width}×{artboard.height}
           </span>
           <ChevronDown size={14} />
         </button>
@@ -160,7 +160,7 @@ export function TopBar() {
               >
                 <span>{p.label}</span>
                 <span className="text-xs tabular-nums text-muted">
-                  {p.width}Ã—{p.height}
+                  {p.width}×{p.height}
                 </span>
               </button>
             ))}

@@ -125,7 +125,7 @@ function ImageControls({ el, update }: { el: ImageElement; update: (p: ElementPa
             type="button"
             onClick={() => setCropping(el.id)}
             disabled={el.rotation !== 0}
-            title={el.rotation !== 0 ? "Reset rotation to 0Â° to crop" : "Crop image"}
+            title={el.rotation !== 0 ? "Reset rotation to 0° to crop" : "Crop image"}
             className="inline-flex h-9 items-center justify-center gap-1.5 rounded-md border border-line bg-white text-sm hover:border-flesh-200 hover:bg-flesh-100 disabled:cursor-not-allowed disabled:opacity-40"
           >
             <Crop size={15} /> Crop
@@ -137,7 +137,7 @@ function ImageControls({ el, update }: { el: ImageElement; update: (p: ElementPa
             className="inline-flex h-9 items-center justify-center gap-1.5 rounded-md bg-rind-700 text-sm font-medium text-white hover:bg-rind-800 disabled:opacity-70"
           >
             {bgState.busy ? <Loader2 size={15} className="animate-spin" /> : <Wand2 size={15} />}
-            {bgState.busy ? (bgState.progress ? `${bgState.progress}%` : "Workingâ€¦") : "Remove BG"}
+            {bgState.busy ? (bgState.progress ? `${bgState.progress}%` : "Working…") : "Remove BG"}
           </button>
         </div>
         {el.crop && (
@@ -179,7 +179,7 @@ function ImageControls({ el, update }: { el: ImageElement; update: (p: ElementPa
           <SliderField label="Brightness" value={Math.round(f.brightness * 100)} min={-100} max={100} onChange={(v) => setFilter({ brightness: v / 100 })} />
           <SliderField label="Contrast" value={f.contrast} min={-100} max={100} onChange={(contrast) => setFilter({ contrast })} />
           <SliderField label="Saturation" value={Math.round(f.saturation * 100)} min={-100} max={200} onChange={(v) => setFilter({ saturation: v / 100 })} />
-          <SliderField label="Hue" value={f.hue} min={0} max={359} format={(v) => `${v}Â°`} onChange={(hue) => setFilter({ hue })} />
+          <SliderField label="Hue" value={f.hue} min={0} max={359} format={(v) => `${v}°`} onChange={(hue) => setFilter({ hue })} />
           <SliderField label="Blur" value={f.blur} min={0} max={40} format={(v) => `${v}px`} onChange={(blur) => setFilter({ blur })} />
         </div>
         <div className="mt-3 flex flex-wrap gap-1.5">
@@ -235,7 +235,7 @@ function ElementProperties({ el }: { el: CanvasElement }) {
           ) : (
             <div />
           )}
-          <NumberField label="â†»" value={el.rotation} min={-360} max={360} suffix="Â°" onChange={(rotation) => update({ rotation })} />
+          <NumberField label="↻" value={el.rotation} min={-360} max={360} suffix="°" onChange={(rotation) => update({ rotation })} />
         </div>
       </Section>
 
@@ -344,10 +344,10 @@ function CanvasProperties() {
       <Section title="Shortcuts">
         <dl className="grid grid-cols-[1fr_auto] gap-y-1.5 text-xs">
           {[
-            ["Undo / Redo", "Ctrl Z / Ctrl â‡§ Z"],
+            ["Undo / Redo", "Ctrl Z / Ctrl ⇧ Z"],
             ["Duplicate", "Ctrl D"],
             ["Delete", "Del"],
-            ["Nudge", "Arrows (â‡§ Ã—10)"],
+            ["Nudge", "Arrows (⇧ ×10)"],
             ["Layer up / down", "Ctrl ] / Ctrl ["],
             ["Edit text", "Double-click"],
             ["Deselect", "Esc"],
