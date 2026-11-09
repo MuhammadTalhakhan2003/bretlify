@@ -2,7 +2,9 @@
 
 **A fast, collaborative, AI-powered graphic design editor that runs in the browser.** Think a lightweight Canva/Photoshop hybrid for social posts, thumbnails, posters and slides.
 
-<!-- Add a GIF/screenshot here: docs/demo.gif -->
+**[Try it live → bretlify.vercel.app](https://bretlify.vercel.app)** (no account needed for the editor)
+
+![Bretlify demo: loading a template, recoloring the headline, dragging a shape, painting with the brush and opening export](docs/demo.gif)
 
 ## Features
 
