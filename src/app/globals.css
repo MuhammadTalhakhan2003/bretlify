@@ -52,10 +52,27 @@ body {
   overflow: hidden;
 }
 
+:root {
+  /* The UI is designed light-only; stop browsers applying dark form-control colors. */
+  color-scheme: light;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/* Form controls always get readable dark text; utility classes (e.g. text-white) still override. */
+input,
+textarea,
+select {
+  color: var(--seed);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted);
+  opacity: 1;
 }
 
 /* Dotted workspace behind the artboard */
