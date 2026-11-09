@@ -58,7 +58,7 @@ export function MagicModal({ onClose }: { onClose: () => void }) {
       <div
         role="dialog"
         aria-label="Magic Design"
-        className="w-full max-w-xl overflow-hidden rounded-2xl bg-cream shadow-2xl"
+        className="w-full max-w-xl overflow-hidden rounded-2xl bg-cream text-seed shadow-2xl"
         onMouseDown={(e) => e.stopPropagation()}
       >
         <div className="flex items-start justify-between bg-gradient-to-br from-flesh-500 to-flesh-400 px-6 py-5 text-white">

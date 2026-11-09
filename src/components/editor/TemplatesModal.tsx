@@ -21,7 +21,7 @@ export function TemplatesModal({ onClose }: { onClose: () => void }) {
       <div
         role="dialog"
         aria-label="Templates"
-        className="flex max-h-[85vh] w-full max-w-4xl flex-col overflow-hidden rounded-2xl bg-cream shadow-2xl"
+        className="flex max-h-[85vh] w-full max-w-4xl flex-col overflow-hidden rounded-2xl bg-cream text-seed shadow-2xl"
         onMouseDown={(e) => e.stopPropagation()}
       >
         <div className="flex items-center justify-between border-b border-line px-6 py-4">
